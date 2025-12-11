@@ -1,4 +1,4 @@
-from api_client import get_projects, get_versions, get_vulnerable_components, extract_id_from_href
+from api_client import get_projects, get_versions, get_vulnerable_components
 from data_processor import select_oldest_newest_versions, build_vuln_records, make_summary_severity, make_summary_cwe
 import pandas as pd
 import re
@@ -7,29 +7,36 @@ import re
 # ===========================
 # FETCH DATA
 # ===========================
-projects = get_projects()
+desired = ["webgoat"]
+
+projects = get_projects(desired)
 
 all_records = []
 
 for p in projects:
+    name = p.get("name")
     pid = re.sub(r".*/projects/", "" ,p.get("_meta").get("href"))
     print("========> {} - {} <========".format(p.get("name"), pid))
 
     versions = get_versions(pid)
     oldest, newest = select_oldest_newest_versions(versions)
 
-    for o in oldest:
-        print(o)
+    # print("Oldest version name:", oldest.get("versionName"))
+    # print("Newest version name:", newest.get("versionName"))
 
-    # for ver_info, tag in [(oldest,"oldest"),(newest,"latest")]:
-    #     if not ver_info:
-    #         continue
-    #     vid = extract_id_from_href(ver_info.get("_meta",{}).get("href",""))
-    #     vulns = get_vulnerable_components(pid, vid)
+    for ver_info, tag in [(oldest,"oldest"),(newest,"latest")]:
+        if not ver_info:
+            continue
+        
+        vid = re.sub(r".*/versions/", "" ,ver_info.get("_meta").get("href"))
+        # print("{} - {}".format(ver_info.get("versionName"), vid))
+        vulns = get_vulnerable_components(pid, vid)
 
-    #     records = build_vuln_records(id, pid, ver_info, vulns)
-    #     all_records.extend(records)
-    #     print(records)
+        # print("{} {} {} {}".format(name, pid, ver_info, vulns))
+
+        # records = build_vuln_records(id, pid, ver_info, vulns)
+        # all_records.extend(records)
+        # print(records)
 
 df = pd.DataFrame(all_records)
 print(df)
