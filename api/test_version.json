@@ -1,0 +1,805 @@
+{
+  "versionName": "1.0",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "branch": "main",
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-02T06:53:16.593Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-02T06:53:17.968Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab/transition"
+      }
+    ]
+  }
+}
+{
+  "versionName": "jenkins-45",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-02T08:37:00.890Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-02T08:37:00.890Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/12693105-b9b3-4b62-a5b4-6f6fc1f2afe0/transition"
+      }
+    ]
+  }
+}
+{
+  "versionName": "jenkins-50",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-02T08:47:53.627Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-02T08:47:53.627Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/94f47641-fb12-4611-96e7-830f2501b169/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/94f47641-fb12-4611-96e7-830f2501b169/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/94f47641-fb12-4611-96e7-830f2501b169/transition"
+      }
+    ]
+  }
+}
+{
+  "versionName": "jenkins-51",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-02T09:19:30.806Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-02T09:19:30.806Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/e8b9cf4f-e861-41d5-ae59-a39dc7129f3d/transition"
+      }
+    ]
+  }
+}
+{
+  "versionName": "jenkins-52",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-02T09:41:33.427Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-02T09:41:33.427Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/5042c917-0393-4d70-b3f6-53ac3cd18e92/transition"
+      }
+    ]
+  }
+}
+{
+  "versionName": "jenkins-53",
+  "phase": "DEVELOPMENT",
+  "distribution": "EXTERNAL",
+  "license": {
+    "type": "DISJUNCTIVE",
+    "licenses": [
+      {
+        "license": "https://192.168.1.227/api/licenses/00000000-0010-0000-0000-000000000000",
+        "licenses": [],
+        "name": "Unknown License",
+        "ownership": "UNKNOWN",
+        "licenseDisplay": "Unknown License",
+        "licenseFamilySummary": {
+          "name": "Unknown",
+          "href": "https://192.168.1.227/api/license-families/5"
+        }
+      }
+    ],
+    "licenseDisplay": "Unknown License"
+  },
+  "protectedFromDeletion": false,
+  "codeLocationProtection": false,
+  "autoUnmappingStatus": {
+    "hasCodeLocationMarkedForUnmapping": false
+  },
+  "bomState": "ACTIVE",
+  "bomTransitionReason": "CREATED",
+  "createdAt": "2025-12-03T02:07:20.717Z",
+  "createdBy": "sysadmin",
+  "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "settingUpdatedAt": "2025-12-03T02:07:20.717Z",
+  "settingUpdatedBy": "sysadmin",
+  "settingUpdatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+  "source": "CUSTOM",
+  "_meta": {
+    "allow": [
+      "DELETE",
+      "GET",
+      "PUT"
+    ],
+    "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b",
+    "links": [
+      {
+        "rel": "reports",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/reports"
+      },
+      {
+        "rel": "versionReport",
+        "href": "https://192.168.1.227/api/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/reports"
+      },
+      {
+        "rel": "licenseReports",
+        "href": "https://192.168.1.227/api/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/license-reports"
+      },
+      {
+        "rel": "riskProfile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/risk-profile"
+      },
+      {
+        "rel": "version-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/risk-profile"
+      },
+      {
+        "rel": "origin-risk-profile",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/origin-risk-profile"
+      },
+      {
+        "rel": "components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/components"
+      },
+      {
+        "rel": "vulnerable-components",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/vulnerable-bom-components"
+      },
+      {
+        "rel": "comparison",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/comparison"
+      },
+      {
+        "rel": "project",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+      },
+      {
+        "rel": "policy-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/policy-status"
+      },
+      {
+        "rel": "codelocations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/codelocations"
+      },
+      {
+        "rel": "custom-fields",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/custom-fields"
+      },
+      {
+        "rel": "issues",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/issues"
+      },
+      {
+        "rel": "project-version-journal",
+        "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b"
+      },
+      {
+        "rel": "bom-status",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/bom-status"
+      },
+      {
+        "rel": "active-policy-rules",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/policy-rules"
+      },
+      {
+        "rel": "bom-events",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/bom-events"
+      },
+      {
+        "rel": "unmatched-declared-component-count",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/unmatched-declared-component-count"
+      },
+      {
+        "rel": "annotations",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/annotations"
+      },
+      {
+        "rel": "containers",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/containers"
+      },
+      {
+        "rel": "bom-transition",
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/2d147535-7626-4a3c-bb1f-52a96e8f6b6b/transition"
+      }
+    ]
+  }
+}
