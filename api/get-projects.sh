@@ -7,3 +7,5 @@ curl --insecure -X GET "$API" \
   -H "Authorization: Bearer $(jq -r .bearerToken token.json)" \
   -H "Accept: application/vnd.blackducksoftware.project-detail-7+json"\
   | jq '.items | map({proj_name: .name, proj_key: (._meta.href | sub(".*/projects/"; ""))})' > "$OUT"
+
+cat "$OUT" | jq

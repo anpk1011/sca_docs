@@ -19,5 +19,3 @@ done
 jq "[ .[] | select($cond) ]" "$ALL" > "$OUT"
 
 cat "$OUT" | jq
- 
-echo "Filtered projects written to $OUT"
