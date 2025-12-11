@@ -1,33 +1,38 @@
 from api_client import get_projects, get_versions, get_vulnerable_components, extract_id_from_href
-# from data_processor import select_oldest_newest_versions, build_vuln_records, make_summary_severity, make_summary_cwe
+from data_processor import select_oldest_newest_versions, build_vuln_records, make_summary_severity, make_summary_cwe
 import pandas as pd
+import re
 # from plot_dash import save_severity_chart, save_cwe_chart
 
 # ===========================
 # FETCH DATA
 # ===========================
 projects = get_projects()
-df = pd.DataFrame(projects)
-# all_records = []
 
-# for p in projects:
-#     name = p.get("name")
-#     pid = extract_id_from_href(p.get("_meta",{}).get("href",""))
-#     print(f"Processing project {name}")
+all_records = []
 
-#     versions = get_versions(pid)
-#     oldest, newest = select_oldest_newest_versions(versions)
+for p in projects:
+    pid = re.sub(r".*/projects/", "" ,p.get("_meta").get("href"))
+    print("========> {} - {} <========".format(p.get("name"), pid))
 
-#     for ver_info, tag in [(oldest,"oldest"),(newest,"latest")]:
-#         if not ver_info:
-#             continue
-#         vid = extract_id_from_href(ver_info.get("_meta",{}).get("href",""))
-#         vulns = get_vulnerable_components(pid, vid)
+    versions = get_versions(pid)
+    oldest, newest = select_oldest_newest_versions(versions)
 
-#         records = build_vuln_records(name, pid, ver_info, vulns)
-#         all_records.extend(records)
+    for o in oldest:
+        print(o)
 
-# df = pd.DataFrame(all_records)
+    # for ver_info, tag in [(oldest,"oldest"),(newest,"latest")]:
+    #     if not ver_info:
+    #         continue
+    #     vid = extract_id_from_href(ver_info.get("_meta",{}).get("href",""))
+    #     vulns = get_vulnerable_components(pid, vid)
+
+    #     records = build_vuln_records(id, pid, ver_info, vulns)
+    #     all_records.extend(records)
+    #     print(records)
+
+df = pd.DataFrame(all_records)
+print(df)
 
 # ===========================
 # EXPORT EXCEL

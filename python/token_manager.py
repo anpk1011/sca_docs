@@ -2,10 +2,13 @@ import requests
 import json
 import os
 import time
+import urllib3
 
 TOKEN_PATH = "token.json"
 AUTH_API = "https://192.168.1.227:443/api/tokens/authenticate"
 AUTH_HEADER = "token NTYzMzM2OTItMDNkZC00OWVmLTgwMTYtZGQ2NWIzYzA3Y2JjOjBlODJlNjgzLWE4MjMtNDM4Yy05YTk4LTk2YTdkN2YyYzQ1ZA=="
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def fetch_new_token():
     """Call authentication API to get fresh token."""

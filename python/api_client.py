@@ -1,6 +1,9 @@
 from urllib.parse import urljoin
 import requests
 from token_manager import get_token
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def auth_headers():
     token = get_token()
@@ -17,6 +20,7 @@ def get_json(url):
 def get_projects():
     url = urljoin("https://192.168.1.227:443", "/api/projects")
     data = get_json(url)
+    print("---> get project successful")
     return data.get("items", [])
 
 def get_versions(projectId):
@@ -29,7 +33,6 @@ def get_vulnerable_components(projectId, versionId):
         "https://192.168.1.227:443",
         f"/api/projects/{projectId}/versions/{versionId}/vulnerable-bom-components"
     )
-    return get_json(url)
+    data = get_json(url)
+    return data.get("items", [])
 
-def extract_id_from_href(href):
-    return href.rstrip("/").split("/")[-1]
