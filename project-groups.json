@@ -1,0 +1,8 @@
+{
+  "logRef": "hub-webapp_0svvbPyj",
+  "errorMessage": "Cannot generate acceptable response content",
+  "arguments": {},
+  "errorCode": "{core.rest.not_acceptable}",
+  "errors": [],
+  "links": []
+}

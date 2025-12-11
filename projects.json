@@ -1,0 +1,588 @@
+{
+  "totalCount": 6,
+  "items": [
+    {
+      "name": "C12-SCA Demo",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "DEEP_LICENSE",
+        "LICENSE_TERM_FULFILLMENT",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/455a6976-b89b-43c5-93d1-5c2cbea7f117",
+      "createdAt": "2025-09-08T02:58:48.117Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-09-08T02:58:48.117Z",
+      "updatedBy": "blackduck_system",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0004-000000000011",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/versions/d682fd7d-7a53-4fd6-a8c2-443aa62c3059"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/06c96d9c-8bce-433f-8417-df651c409f01"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/06c96d9c-8bce-433f-8417-df651c409f01/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/a98119f9-bb1e-46c9-9d1f-fdc8e826f18d",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/06c96d9c-8bce-433f-8417-df651c409f01/scm"
+          }
+        ]
+      }
+    },
+    {
+      "name": "crm-test",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "LICENSE_TERM_FULFILLMENT",
+        "DEEP_LICENSE",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/85c5e42b-c224-42a0-9966-204cd436c8fa",
+      "createdAt": "2025-10-14T03:59:02.870Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-10-14T03:59:02.870Z",
+      "updatedBy": "sysadmin",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/versions/818d1403-8b5c-4811-bfa5-6d74d36ebf16"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/906f2262-addb-4881-88bb-01cbb5596a10"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/906f2262-addb-4881-88bb-01cbb5596a10/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/67169221-a8e8-4621-8714-df504e8f42f6",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/906f2262-addb-4881-88bb-01cbb5596a10/scm"
+          }
+        ]
+      }
+    },
+    {
+      "name": "django-nv",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "DEEP_LICENSE",
+        "LICENSE_TERM_FULFILLMENT",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/455a6976-b89b-43c5-93d1-5c2cbea7f117",
+      "repository": "git@192.168.1.225:blackduck/django-nv.git",
+      "createdAt": "2025-12-02T06:53:16.477Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-12-02T06:53:16.477Z",
+      "updatedBy": "sysadmin",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/versions/9989e7fc-c545-46db-879b-bceea7fb61ab"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/43c9b3aa-aea9-43ca-b4c6-b3d93f79279a",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/e31c43d8-0fd8-411f-825e-8ae020531ab2/scm"
+          }
+        ]
+      }
+    },
+    {
+      "name": "openmct",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "LICENSE_TERM_FULFILLMENT",
+        "DEEP_LICENSE",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/455a6976-b89b-43c5-93d1-5c2cbea7f117",
+      "repository": "http://192.168.1.225/root/openmct.git",
+      "createdAt": "2025-09-04T08:22:28.012Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-09-04T08:22:28.012Z",
+      "updatedBy": "sysadmin",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/versions/bf847891-5528-490b-9c9c-6cda811ff3a5"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/a03644c2-a6f1-4895-a91b-06038b11dbbe",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/2984d32f-009f-4cf4-aba2-52aefb58e8a9/scm"
+          }
+        ]
+      }
+    },
+    {
+      "name": "owasp-nodejs-goat",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "LICENSE_TERM_FULFILLMENT",
+        "DEEP_LICENSE",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/455a6976-b89b-43c5-93d1-5c2cbea7f117",
+      "createdAt": "2025-12-02T06:55:36.037Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-12-02T06:55:36.037Z",
+      "updatedBy": "sysadmin",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/versions/73bf0aa9-a945-4f92-b9e1-dfe30e5c58df"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/021f6b60-0c6c-45c5-9546-c80f03923587"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/021f6b60-0c6c-45c5-9546-c80f03923587/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/667f058b-b263-40d5-8671-0f5d14572dac",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/021f6b60-0c6c-45c5-9546-c80f03923587/scm"
+          }
+        ]
+      }
+    },
+    {
+      "name": "webgoat",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "DEEP_LICENSE",
+        "LICENSE_TERM_FULFILLMENT",
+        "COMPONENT_DATA",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "projectGroup": "https://192.168.1.227/api/project-groups/85c5e42b-c224-42a0-9966-204cd436c8fa",
+      "repository": "http://192.168.1.225/root/webgoat.git",
+      "createdAt": "2025-08-27T07:23:48.386Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2025-08-27T07:23:48.386Z",
+      "updatedBy": "blackduck_system",
+      "updatedByUser": "https://192.168.1.227/api/users/00000000-0000-0000-0004-000000000011",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/versions/3552d670-211a-4875-8160-ef2749b1f484"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://192.168.1.227/api/journal/projects/83244cf3-c776-4865-8073-e18fc86bd07a"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/custom-fields"
+          },
+          {
+            "rel": "sbom-fields",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/sbom-fields"
+          },
+          {
+            "rel": "lts-project-versions",
+            "href": "https://192.168.1.227/api/lts-projects/83244cf3-c776-4865-8073-e18fc86bd07a/lts-project-versions"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://192.168.1.227/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/4438a014-9e76-4ba0-bf00-b4cc132de6c6",
+            "label": "subscription"
+          },
+          {
+            "rel": "scm",
+            "href": "https://192.168.1.227/api/projects/83244cf3-c776-4865-8073-e18fc86bd07a/scm"
+          }
+        ]
+      }
+    }
+  ],
+  "appliedFilters": [],
+  "_meta": {
+    "allow": [
+      "POST",
+      "GET"
+    ],
+    "href": "https://192.168.1.227/api/projects",
+    "links": [
+      {
+        "rel": "static-date-filter",
+        "href": "https://192.168.1.227/api/projects-filters?filterKey=createdAt",
+        "name": "createdAt",
+        "label": "Created Date"
+      },
+      {
+        "rel": "dynamic-filter",
+        "href": "https://192.168.1.227/api/projects-filters?filterKey=owner",
+        "name": "owner",
+        "label": "Owner"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://192.168.1.227/api/projects-filters?filterKey=subscribed",
+        "name": "subscribed",
+        "label": "Subscribed"
+      }
+    ]
+  }
+}
