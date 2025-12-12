@@ -9,6 +9,7 @@ def build_vuln_records(project_name, project_id, version_info, vuln_components, 
     for comp in vuln_components:
         comp_name = comp.get("componentName", "Unknown Component")
         for v in comp.get("vulnerabilities", []):
+            cwe_list = [cwe.get("name") for cwe in v.get("relatedVulnerabilities", []) if "name" in cwe]
             record = {
                 "Project": project_name,
                 "ProjectId": project_id,

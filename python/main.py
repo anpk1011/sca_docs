@@ -22,17 +22,12 @@ for project in projects:
     vuln_comps_new = get_vulnerabilities(latest_ver["_meta"]["href"])
     records_old = build_vuln_records(proj_name, proj_id, oldest_ver, vuln_comps_old, "oldest")
     records_new = build_vuln_records(proj_name, proj_id, latest_ver, vuln_comps_new, "latest")
-    print(records_new)
     all_records.extend(records_old + records_new)
 
 df_vulns = pd.DataFrame(all_records)
 print(df_vulns)
-# if df_vulns.empty:
-#     print("Không có lỗ hổng nào được thu thập.")
-# else:
-#     # 6. Tạo bảng tổng hợp severity và CWE
+
+# if not df_vulns.empty:
 #     df_summary_sev = make_summary_severity(df_vulns)
 #     df_summary_cwe = make_summary_cwe(df_vulns)
-#     # 7. Xuất file Excel báo cáo
 #     export_report(df_vulns, df_summary_sev, df_summary_cwe, filename="BlackDuck_Vuln_Report.xlsx")
-#     print("Đã xuất báo cáo BlackDuck_Vuln_Report.xlsx")
