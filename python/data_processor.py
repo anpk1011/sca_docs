@@ -1,4 +1,5 @@
 import pandas as pd
+from debug_utils import debug
 
 def build_vuln_records(project_name, project_id, version_info, vuln_components, snapshot_label):
     records = []
@@ -8,8 +9,10 @@ def build_vuln_records(project_name, project_id, version_info, vuln_components, 
     version_id = version_info.get("_meta", {}).get("href", "").split("/")[-1]
     for comp in vuln_components:
         comp_name = comp.get("componentName", "Unknown Component")
+        debug(f"Comp : {comp}")
         for v in comp.get("vulnerabilities", []):
             cwe_list = [cwe.get("name") for cwe in v.get("relatedVulnerabilities", []) if "name" in cwe]
+            # debug(f"cwe_list: {cwe_list}")
             record = {
                 "Project": project_name,
                 "ProjectId": project_id,
