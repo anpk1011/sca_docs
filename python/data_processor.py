@@ -1,42 +1,41 @@
 import pandas as pd
 
-def select_oldest_newest_versions(versions):
-    """
-    versions: list of version dicts
-    return: (oldest, newest)
-    """
-    if not versions:
-        return (None, None)
-    sorted_ = sorted(versions, key=lambda v: v.get("createdAt",""))
-    return sorted_[0], sorted_[-1]
-
-def build_vuln_records(project_name, project_id, version_info, vuln_components):
-    """
-    version_info: dict version
-    vuln_components: list of vuln components returned by API
-    """
+def build_vuln_records(project_name, project_id, version_info, vuln_components, snapshot_label):
     records = []
-    vname = version_info.get("versionName")
-    vid = version_info.get("_meta",{}).get("href","").split("/")[-1]
+    if version_info is None:
+        return records
+    version_name = version_info.get("versionName")
+    version_id = version_info.get("_meta", {}).get("href", "").split("/")[-1]
     for comp in vuln_components:
-        comp_name = comp.get("componentName")
-        for v in comp.get("vulnerabilities",[]):
-            records.append({
+        comp_name = comp.get("componentName", "Unknown Component")
+        for v in comp.get("vulnerabilities", []):
+            record = {
                 "Project": project_name,
                 "ProjectId": project_id,
-                "VersionName": vname,
-                "VersionId": vid,
+                "VersionName": version_name,
+                "VersionId": version_id,
+                "Snapshot": snapshot_label,
                 "Component": comp_name,
                 "VulnID": v.get("vulnerabilityId"),
                 "Severity": v.get("severity"),
-                "CWEs": ", ".join(v.get("cwes",[])) if v.get("cwes") else ""
-            })
+                "CWEs": ", ".join(cwe_list) if cwe_list else ""
+            }
+            records.append(record)
     return records
 
-def make_summary_severity(df):
-    return df.groupby(["Project","VersionName","Severity"])["VulnID"].count().reset_index(name="Count")
+def make_summary_severity(df_vulns):
+    summary = df_vulns.groupby(
+        ["Project", "VersionName", "Snapshot", "Severity"], dropna=False
+    )["VulnID"].count().reset_index(name="Count")
+    return summary
 
-def make_summary_cwe(df):
-    df2 = df[df["CWEs"]!=""]
-    df2 = df2.assign(CWE = df2["CWEs"].str.split(", ")).explode("CWE")
-    return df2.groupby(["Project","VersionName","CWE"])["VulnID"].count().reset_index(name="Count")
+def make_summary_cwe(df_vulns):
+    df_with_cwe = df_vulns[df_vulns["CWEs"] != ""].copy()
+    if df_with_cwe.empty:
+        return pd.DataFrame(columns=["Project", "VersionName", "Snapshot", "CWE", "Count"])
+    df_with_cwe["CWE"] = df_with_cwe["CWEs"].str.split(", ")
+    df_exploded = df_with_cwe.explode("CWE")
+    summary = df_exploded.groupby(
+        ["Project", "VersionName", "Snapshot", "CWE"], dropna=False
+    )["VulnID"].count().reset_index(name="Count")
+    return summary
