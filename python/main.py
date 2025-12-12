@@ -1,7 +1,8 @@
 from api_client import get_projects, get_versions, get_vulnerabilities
 from data_processor import build_vuln_records, make_summary_severity, make_summary_cwe
-# from plot_dash import export_report
+from plot_dash import export_report
 import pandas as pd
+from debug_utils import debug
 
 desired_projects = ["webgoat"]
 
@@ -25,9 +26,9 @@ for project in projects:
     all_records.extend(records_old + records_new)
 
 df_vulns = pd.DataFrame(all_records)
-print(df_vulns)
+debug(f"DataFrame : \n{df_vulns}")
 
-# if not df_vulns.empty:
-#     df_summary_sev = make_summary_severity(df_vulns)
-#     df_summary_cwe = make_summary_cwe(df_vulns)
-#     export_report(df_vulns, df_summary_sev, df_summary_cwe, filename="BlackDuck_Vuln_Report.xlsx")
+if not df_vulns.empty:
+    df_summary_sev = make_summary_severity(df_vulns)
+    df_summary_cwe = make_summary_cwe(df_vulns)
+    export_report(df_vulns, df_summary_sev, df_summary_cwe, filename="BlackDuck_Vuln_Report.xlsx")
