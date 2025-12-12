@@ -30,7 +30,7 @@ def get_versions(project_id):
     return None, None
 
 def get_vulnerabilities(version_url):
-    vuln_url = f"{version_url}/vulnerable-bom-components"
+    vuln_url = f"{version_url}/vulnerable-bom-components?limit=500&offset=0"
     try:
         data = _get_json(vuln_url)
         return data.get("items", [])

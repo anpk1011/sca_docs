@@ -158,3 +158,66 @@ Index(['Project', 'ProjectId', 'VersionName', 'VersionId', 'Snapshot',
 19  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-5235      LOW  CWE-288
 
 [20 rows x 12 columns]
+2025-12-12 16:18:16 [DEBUG] main.py:29 in <module>() -> DataFrame : 
+    Project                             ProjectId      VersionName  ...           VulnID Severity     CWEs
+0   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-6881   MEDIUM  CWE-674
+1   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...  BDSA-2025-14737     HIGH   CWE-22
+2   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...  BDSA-2025-14738   MEDIUM  CWE-150
+3   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...  BDSA-2025-14740      LOW  CWE-404
+4   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-3615     HIGH   CWE-20
+5   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-3616   MEDIUM  CWE-150
+6   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-4728      LOW  CWE-178
+7   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-5233   MEDIUM  CWE-400
+8   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-5234      LOW  CWE-426
+9   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  test-with-build  ...   BDSA-2025-5235      LOW  CWE-288
+10  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-6881   MEDIUM  CWE-674
+11  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...  BDSA-2025-14737     HIGH   CWE-22
+12  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...  BDSA-2025-14738   MEDIUM  CWE-150
+13  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...  BDSA-2025-14740      LOW  CWE-404
+14  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-3615     HIGH   CWE-20
+15  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-3616   MEDIUM  CWE-150
+16  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-4728      LOW  CWE-178
+17  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-5233   MEDIUM  CWE-400
+18  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-5234      LOW  CWE-426
+19  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a    main-07ee4aa4  ...   BDSA-2025-5235      LOW  CWE-288
+
+[20 rows x 12 columns]
+2025-12-12 16:22:26 [DEBUG] main.py:32 in <module>() -> [DEBUG] Data:
+    Project                             ProjectId  ... Severity      CWE
+0   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-674
+1   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH   CWE-22
+2   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-150
+3   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-404
+4   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH   CWE-20
+5   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-150
+6   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-178
+7   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-400
+8   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-426
+9   webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-288
+10  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-674
+11  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH   CWE-22
+12  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-150
+13  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-404
+14  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH   CWE-20
+15  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-150
+16  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-178
+17  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM  CWE-400
+18  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-426
+19  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW  CWE-288
+
+[20 rows x 11 columns]
+2025-12-12 16:30:37 [DEBUG] main.py:32 in <module>() -> [DEBUG] Data:
+     Project                             ProjectId  ... Severity               CWE
+0    webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM           CWE-674
+1    webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH            CWE-22
+2    webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...   MEDIUM           CWE-150
+3    webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW           CWE-404
+4    webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     HIGH            CWE-20
+..       ...                                   ...  ...      ...               ...
+393  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     None  CWE-121, CWE-787
+394  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     None           CWE-400
+395  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...      LOW           CWE-400
+396  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     None  CWE-287, CWE-295
+397  webgoat  83244cf3-c776-4865-8073-e18fc86bd07a  ...     None           CWE-200
+
+[398 rows x 11 columns]

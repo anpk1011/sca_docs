@@ -26,3 +26,10 @@ def save_cwe_chart(df_cwe, out_dir="charts"):
         fn = os.path.join(out_dir, f"{proj}_{ver}_cwe.png")
         plt.savefig(fn)
         plt.close()
+
+def export_report(df_raw, df_sev, df_cwe, filename="output.xlsx"):
+    import pandas as pd
+    with pd.ExcelWriter(filename, engine="openpyxl") as writer:
+        df_raw.to_excel(writer, sheet_name="Raw", index=False)
+        df_sev.to_excel(writer, sheet_name="Severity_Summary", index=False)
+        df_cwe.to_excel(writer, sheet_name="CWE_Summary", index=False)
