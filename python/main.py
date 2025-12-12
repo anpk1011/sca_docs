@@ -1,6 +1,6 @@
 from api_client import get_projects, get_versions, get_vulnerabilities
 from data_processor import build_vuln_records, make_summary_severity, make_summary_cwe
-from plot_dash import export_report
+# from plot_dash import export_report
 import pandas as pd
 
 desired_projects = ["webgoat"]
@@ -16,12 +16,13 @@ for project in projects:
     if not oldest_ver or not latest_ver:
         print(f"  - Bỏ qua (không có phiên bản hoặc chỉ một phiên bản).")
         continue
-    print(f"  - Phiên bản sớm nhất: {oldest_ver['versionName']} ({oldest_ver.get('createdAt')})")
+    print(f"  - Phiên bản cũ nhất: {oldest_ver['versionName']} ({oldest_ver.get('createdAt')})")
     print(f"  - Phiên bản mới nhất: {latest_ver['versionName']} ({latest_ver.get('createdAt')})")
     vuln_comps_old = get_vulnerabilities(oldest_ver["_meta"]["href"])
     vuln_comps_new = get_vulnerabilities(latest_ver["_meta"]["href"])
     records_old = build_vuln_records(proj_name, proj_id, oldest_ver, vuln_comps_old, "oldest")
     records_new = build_vuln_records(proj_name, proj_id, latest_ver, vuln_comps_new, "latest")
+    print(records_new)
     all_records.extend(records_old + records_new)
 
 df_vulns = pd.DataFrame(all_records)

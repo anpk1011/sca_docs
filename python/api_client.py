@@ -1,47 +1,39 @@
-from urllib.parse import urljoin
 import requests
 from token_manager import get_token
-import urllib3
-
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-BASE_URL = "https://192.168.1.227:443"  
-
-def _auth_headers():
-    token = get_token()
-    return {
-        "Accept": "application/json",
-        "Authorization": f"Bearer {token}"
-    }
+from urllib.parse import urljoin
 
 def _get_json(url):
-    resp = requests.get(url, headers=_auth_headers(), verify=False)
-    resp.raise_for_status()
-    return resp.json()
+    headers = {
+        "Authorization": f"Bearer {get_token()}",
+        "Accept": "application/json"
+    }
+    response = requests.get(url, headers=headers, verify=False)
+    response.raise_for_status()
+    return response.json()
 
-def get_projects(filter_names=None):
-    data = _get_json(urljoin(BASE_URL, "/api/projects"))
+def get_projects(project_names=None):
+    url = "https://192.168.1.227/api/projects"
+    data = _get_json(url)
     projects = data.get("items", [])
-    if filter_names:
-        projects = [p for p in projects if p.get("name") in filter_names]
+    if project_names:
+        return [proj for proj in projects if proj.get("name") in project_names]
     return projects
 
 def get_versions(project_id):
-    data = _get_json(urljoin(BASE_URL, f"/api/projects/{project_id}/versions"))
-    versions = data.get("items", [])
-    if not versions:
-        return (None, None)
-    versions.sort(key=lambda v: v.get("createdAt", ""))
-    oldest = versions[0]
-    latest = versions[-1]
-    return (oldest, latest)
+    url = f"https://192.168.1.227/api/projects/{project_id}/versions"
+    data = _get_json(url)
+    versions = sorted(data.get("items", []), key=lambda v: v.get("createdAt"))
+    if len(versions) >= 2:
+        return versions[0], versions[-1]
+    elif versions:
+        return versions[0], None
+    return None, None
 
 def get_vulnerabilities(version_url):
-    data = _get_json(urljoin(version_url, "components"))
-    components = data.get("items", [])
-    vuln_components = []
-    for comp in components:
-        vulns = comp.get("vulnerabilities") or comp.get("vulnerabilityWithRemediation")
-        if vulns:
-            comp["vulnerabilities"] = vulns
-            vuln_components.append(comp)
-    return vuln_components
+    vuln_url = f"{version_url}/vulnerable-bom-components"
+    try:
+        data = _get_json(vuln_url)
+        return data.get("items", [])
+    except requests.HTTPError as e:
+        print(f"[get_vulnerabilities] Lỗi khi gọi {vuln_url}: {e}")
+        return []
